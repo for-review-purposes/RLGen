@@ -363,26 +363,27 @@ display: none;
 <div id="overview" class="section level2">
 <h2>Overview</h2>
 <p>This repository contains the scripts and examples that accompany the
-RE 2023 submission “Goal-based Design and Generation of Reinforcement
-Learning Domain Simulations”.</p>
+RE 2023 submission “Goal-oriented Analysis and Generation of
+Reinforcement Learning Domain Simulations”.</p>
 <p>The python scripts implementing GMEnv and and Query Interface can be
 found in <code>/scripts</code> The example goal models and various tests
 and experiments against them can be found in <code>/examples</code></p>
 </div>
 <div id="installation-and-execution-instructions" class="section level2">
 <h2>Installation and Execution Instructions</h2>
-<p>The scripts have been tried using the following versions of python
-and key libraries:</p>
+<p>The scripts have been tested using the following versions of the
+python interpreter and key libraries:</p>
 <ul>
 <li><code>python version 3.9.12</code></li>
 <li><code>stable-baselines3 1.5.0</code></li>
 <li><code>pyswip 0.2.11</code></li>
 </ul>
-<p>To run the test and experiments you need to:</p>
+<p>Directions to run the test and experiments:</p>
 <ul>
 <li><p>Clone the repository locally.</p></li>
-<li><p>Grab the DT-Golog code from <a href="https://www.cs.ryerson.ca/~mes/publications/appendix/appendixC/dtgolog">its
-creator’s page</a>.</p></li>
+<li><p>Acquire the DT-Golog code from <a href="https://www.cs.ryerson.ca/~mes/publications/appendix/appendixC/dtgolog">its
+creator’s page</a>, and place it in a file called
+<code>DT-Golog.pl</code> under <code>/scripts/QE/</code></p></li>
 <li><p>Make the following changes so that it runs on SWI-Prolog</p>
 <ul>
 <li><p>Comment out the following:</p>
@@ -392,7 +393,7 @@ creator’s page</a>.</p></li>
 (not X) := (\+ X).
 cputime(5).</code></pre></li>
 </ul></li>
-<li><p>Run the test and trial scripts in <code>/examples</code>
+<li><p>Run the test and trial scripts in the <code>/examples</code>
 folder.</p></li>
 </ul>
 </div>
@@ -400,15 +401,14 @@ folder.</p></li>
 <h2>The Models</h2>
 <ul>
 <li>Several models have been developed for tests and experiments. They
-can be visually inspected in GoalModels.drawio which can be opened using
-<a href="https://app.diagrams.net/" class="uri">https://app.diagrams.net/</a></li>
+can be reviewed in GoalModels.drawio which can be opened using <a href="https://app.diagrams.net/" class="uri">https://app.diagrams.net/</a></li>
 <li>The corresponding specifications can be found in the
 <code>.pl</code> file in the <code>/examples</code> folder. The same
 model may have both a discrete and a continuous implementation (which
 are different only in one line of code whereby the state space is
 specified).</li>
-<li>Files named <code>[XXX]_Tests.py</code> contain simple pyunit
-tests.</li>
+<li>Files named <code>[XXX]_Tests.py</code> contain simple python
+<code>unittest</code> tests.</li>
 <li>Files named <code>[XXX]_Trials.py</code> contain simulation and
 learning experiments.
 <ul>
@@ -417,8 +417,8 @@ iteration numbers to <code>simRandomIter</code>,
 <code>simOptimalRandomIter</code>, <code>trainingIter</code> (number of
 training steps) <code>testingIter</code> (number of testing episodes).
 <code>10,000</code> is a good number to start with.</li>
-<li><code>learningAlgorithm</code> should be one of <code>A2C</code>,
-<code>PPO</code>, or <code>DQN</code></li>
+<li><code>learningAlgorithm</code> can be one of <code>A2C</code>,
+<code>PPO</code>, or <code>DQN</code> implemented as part of <a href="https://stable-baselines3.readthedocs.io/en/master/guide/algos.html">stable-baselines3</a></li>
 </ul></li>
 </ul>
 </div>

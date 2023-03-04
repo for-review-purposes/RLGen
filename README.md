@@ -31,7 +31,7 @@ Directions to run the test and experiments:
     (not X) := (\+ X).
     cputime(5).
     ```
-* Run the test and trial scripts in `/examples` folder.
+* Run the test and trial scripts in the `/examples` folder.
 
 ## The Models
 
@@ -40,7 +40,7 @@ Directions to run the test and experiments:
 * Files named `[XXX]_Tests.py` contain simple python `unittest` tests.
 * Files named `[XXX]_Trials.py` contain simulation and learning experiments. 
   * For running simulations or learning be sure to give meaningful iteration numbers to `simRandomIter`, `simOptimalRandomIter`, `trainingIter` (number of training steps) `testingIter` (number of testing episodes). `10,000` is a good number to start with.
-  * `learningAlgorithm` can be one of `A2C`, `PPO`, or `DQN` all implemented within [stable-baselines3](https://stable-baselines3.readthedocs.io/en/master/guide/algos.html)
+  * `learningAlgorithm` can be one of `A2C`, `PPO`, or `DQN` implemented as part of [stable-baselines3](https://stable-baselines3.readthedocs.io/en/master/guide/algos.html)
 
 
 
