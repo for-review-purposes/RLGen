@@ -1,7 +1,8 @@
 # RL Gen
+_Reproducibility Package for: Model-driven Design and Generation of Domain Simulators for Reinforcement Learning (anonymized)_
 
 ## Overview
-This repository contains the scripts and examples that accompany the RE 2023 submission "Goal-oriented Analysis and Generation of Reinforcement Learning Domain Simulations". 
+This repository contains the scripts and examples that accompany the conference submission "Model-driven Design and Generation of Domain Simulators for Reinforcement Learning". 
 
 The python scripts implementing GMEnv and and Query Interface can be found in `/scripts`
 The example goal models and various tests and experiments against them can be found in `/examples`
