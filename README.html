@@ -297,23 +297,17 @@ overflow-y: auto;
 border: 1px solid #ddd;
 border-radius: 4px;
 }
-.tabset-dropdown > .nav-tabs > li.active:before {
-content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+content: "\e259";
 font-family: 'Glyphicons Halflings';
 display: inline-block;
 padding: 10px;
 border-right: 1px solid #ddd;
 }
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-content: "";
-border: none;
-}
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-content: "";
+content: "\e258";
 font-family: 'Glyphicons Halflings';
-display: inline-block;
-padding: 10px;
-border-right: 1px solid #ddd;
+border: none;
 }
 .tabset-dropdown > .nav-tabs > li.active {
 display: block;
@@ -360,11 +354,14 @@ display: none;
 
 <div id="rl-gen" class="section level1">
 <h1>RL Gen</h1>
+<p>Title: <em>Reproducibility Package for: Model-driven Design and
+Generation of Domain Simulators for Reinforcement Learning
+(anonymized)</em></p>
 <div id="overview" class="section level2">
 <h2>Overview</h2>
 <p>This repository contains the scripts and examples that accompany the
-RE 2023 submission “Goal-oriented Analysis and Generation of
-Reinforcement Learning Domain Simulations”.</p>
+conference submission “Model-driven Design and Generation of Domain
+Simulators for Reinforcement Learning”.</p>
 <p>The python scripts implementing GMEnv and and Query Interface can be
 found in <code>/scripts</code> The example goal models and various tests
 and experiments against them can be found in <code>/examples</code></p>
