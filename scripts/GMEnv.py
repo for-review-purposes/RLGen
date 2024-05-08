@@ -30,7 +30,7 @@ class GMEnv(Env):
         #                TaskB2 (3) --(eff)--> TA2S (6), TA3F (7)
         # There are hence the following fluents:
         # TA0S_fl, TA0F_fl, TA1S_fl, TA1F_fl, TA1S_fl, ...
-        # The numbering below corresponds to numbers in parentheses above
+        # The numbering below corresponds to numbers in parentheses above.
 
         # tH: List of lists of agent actions that have been performed. Each list corresponds to a signle run.
         # e.g. [[]], [[1]], [[0,3],[]] or [[0,3],[1]], 
@@ -51,7 +51,6 @@ class GMEnv(Env):
         # [[0,0,0,1,0,0,0,1],[0,0,1,0,0,0,0,0]] (consistent with above - 2 run problem)
         self.bitState = [[]]; # To be revised/initialized below.
     
-
         # A float array with the values of all continuous variables
         self.ccState = []; # To be revised/initialized below.
 
@@ -79,7 +78,7 @@ class GMEnv(Env):
 
         self.debug = False
         
-        # Obtain Domain parameters from Query Engine
+        # Obtain domain parameters from Query Engine
         self.actionSize, self.stateSize, self.initBitState, self.obsType, self.runsNum = self.qmi.getDomainParams()
         # print("Building environment:")
         # print("--> actionSize: {}".format(self.actionSize))
@@ -217,7 +216,7 @@ class GMEnv(Env):
         return (self.qmi.done(self.eHString()) or (self.run == self.runsNum) or self.terminateEpisode )
             
     def render(self):
-        # Viualization not implemented
+        # Visualization not implemented
         pass
 
     def achieved(self):

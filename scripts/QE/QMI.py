@@ -111,7 +111,7 @@ class QMI:
         Returns
         -------
         list[bool]
-            A list of boolean values "b_1, b_2, ...", each b representing the state of each of the domain predicates/fluents in the domain. Order defined in domain spec's "fluentList(...)."
+            A list of boolean values "b_1, b_2, ...", each b_i representing the state of each of the domain predicates/fluents in the domain. Order defined in domain spec's "fluentList(...)."
         """
         pass
     def getConState(self,eH) -> list[float]:
@@ -127,7 +127,7 @@ class QMI:
         Returns
         -------
         list[float]
-            A list of floats "f_1, f_2, ...", each f representing the value of the corresponding quality. Order is defined in domain spec predicate "ccStateShapeInfo(...)."
+            A list of floats "f_1, f_2, ...", each f_i representing the value of the corresponding quality. Order is defined in domain spec predicate "ccStateShapeInfo(...)."
         """
         pass
     def getRun(self,eH) -> int:
