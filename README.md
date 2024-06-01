@@ -1,5 +1,5 @@
 # RL Gen
-Title: _Reproducibility Package for: Model-driven Design and Generation of Domain Simulators for Reinforcement Learning (anonymized)_
+Title: _Reproducibility Package for: Model-driven Design and Generation of Training Simulators for Reinforcement Learning (anonymized)_
 
 ## Overview
 This repository contains the scripts and examples that accompany the conference submission "Model-driven Design and Generation of Domain Simulators for Reinforcement Learning". 
