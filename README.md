@@ -1,7 +1,7 @@
 # RL Gen
 Title: _Reproducibility Package for: Model-driven Design and Generation of Training Simulators for Reinforcement Learning (anonymized)_
 
-Long version of paper under [/docs](https://github.com/for-review-purposes/RLGen/blob/master/docs/ER2024-RL-Long.pdf).
+Long version of paper under [/docs](https://github.com/for-review-purposes/RLGen/blob/master/docs/ER2024-RL-Long.pdf)
 
 ## Overview
 This repository contains the scripts and examples that accompany the conference submission "Model-driven Design and Generation of Domain Simulators for Reinforcement Learning". 
